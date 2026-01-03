@@ -110,3 +110,14 @@ NO_DOC_MATCH_MESSAGE = """
 CONVERSATION_LOG_ERROR_MESSAGE = "過去の会話履歴の表示に失敗しました。"
 GET_LLM_RESPONSE_ERROR_MESSAGE = "回答生成に失敗しました。"
 DISP_ANSWER_ERROR_MESSAGE = "回答表示に失敗しました。"
+
+# =====================================
+# RAG / Retriever 設定（マジックナンバー排除）
+# =====================================
+
+# 取り出す関連ドキュメント数（top-k）
+RETRIEVER_TOP_K = 5
+
+# ドキュメント分割（チャンク）
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 50
