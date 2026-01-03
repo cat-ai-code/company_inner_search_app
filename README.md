@@ -2,21 +2,23 @@
 
 社内情報特化型生成AI検索アプリ（Streamlit）
 
+---
+
 ## 概要
-- **社内文書検索**：入力内容に関連する社内文書を検索
-- **社内問い合わせ**：社内文書の情報をもとに回答を生成
+本アプリは、社内文書をもとに  
+**情報検索および問い合わせ対応を行う生成AIアプリ**です。
+
+### 機能
+- **社内文書検索**  
+  入力内容に関連する社内文書を検索します。
+- **社内問い合わせ対応**  
+  社内文書の情報をもとに、自然言語で回答を生成します。
+
+---
 
 ## 起動方法（ローカル / Mac）
+
+### 1. 仮想環境の作成・有効化
 ```bash
 python3 -m venv env
 source env/bin/activate
-pip install -r requirements_mac.txt
-
-プロジェクト直下に .env を作成し、以下を設定：OPENAI_API_KEY=YOUR_API_KEY
-
-起動：streamlit run main.py
-
-補足：
-•Windowsの場合は requirements_windows.txt を使用してください。
-.env（APIキー）と env/（仮想環境）はGit管理しません。
-```
