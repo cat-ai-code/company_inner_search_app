@@ -6,7 +6,12 @@
 # ライブラリの読み込み
 ############################################################
 import os
-from dotenv import load_dotenv
+# ローカルでは .env を読めると便利 / Streamlit Cloud では Secrets(環境変数)を使う
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except Exception:
+    pass
 import streamlit as st
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema import HumanMessage
